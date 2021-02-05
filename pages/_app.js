@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import { StylesProvider, ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-// import theme from '../src/theme';
+import { Provider } from 'react-redux';
+import { store } from '@reducActions/store';
+import theme from '../theme';
 
 export default function MyApp(props) {
 	const { Component, pageProps } = props;
@@ -17,7 +19,7 @@ export default function MyApp(props) {
 	}, []);
 
 	return (
-		<React.Fragment>
+		<Provider store={store}>
 			<StylesProvider injectFirst>
 				<Head>
 					<title>My page</title>
@@ -32,7 +34,7 @@ export default function MyApp(props) {
 					<Component {...pageProps} />
 				</ThemeProvider>
 			</StylesProvider>
-		</React.Fragment>
+		</Provider>
 	);
 }
 

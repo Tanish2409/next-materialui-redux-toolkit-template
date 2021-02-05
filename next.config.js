@@ -6,6 +6,7 @@ module.exports = {
 			...config.resolve.alias,
 			'@components': path.resolve('./components'),
 			'@public': path.resolve('./public'),
+			'@reduxActions': path.resolve('./redux'),
 		};
 		return config;
 	},

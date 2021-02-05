@@ -3,7 +3,8 @@
 		"baseUrl": "./",
 		"paths": {
 			"@components/*": ["components/*"],
-			"@public/*": ["public/*"]
+			"@public/*": ["public/*"],
+			"@reducActions/*": ["redux/*"]
 		}
 	},
 	"exclude": ["node_modules", "dist"]
