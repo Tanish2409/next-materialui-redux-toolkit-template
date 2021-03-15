@@ -4,8 +4,9 @@ import Head from 'next/head';
 import { StylesProvider, ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { Provider } from 'react-redux';
-import { store } from '@reducActions/store';
+import { store } from '@reduxActions/store';
 import theme from '../theme';
+import '../styles/globals.css';
 
 export default function MyApp(props) {
 	const { Component, pageProps } = props;

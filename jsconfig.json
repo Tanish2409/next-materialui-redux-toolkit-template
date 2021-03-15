@@ -4,7 +4,7 @@
 		"paths": {
 			"@components/*": ["components/*"],
 			"@public/*": ["public/*"],
-			"@reducActions/*": ["redux/*"]
+			"@reduxActions/*": ["redux/*"]
 		}
 	},
 	"exclude": ["node_modules", "dist"]
